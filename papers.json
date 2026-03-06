@@ -1,0 +1,112 @@
+{
+  "working": [
+    {
+      "title": "Why Are the Wealthiest So Wealthy? New Longitudinal Empirical Evidence and Implications for Theories of Wealth Inequality",
+      "authors": "with Elin Halvorsen, Serdar Ozkan, and Sergio Salgado",
+      "year": 2025,
+      "status": "Conditionally Accepted at Econometrica",
+      "pdf": "assets/papers/hubmer_etal_wealth_2025.pdf",
+      "supplement": "assets/papers/hubmer_etal_wealth_2025_supplement.pdf",
+      "abstract": ""
+    },
+    {
+      "title": "Scalable versus Productive Technologies",
+      "authors": "with Mons Chan, Guangbin Hong, Serdar Ozkan, and Sergio Salgado",
+      "year": 2025,
+      "pdf": "assets/papers/hubmer_etal_scalable_2025.pdf",
+      "abstract": "Do larger firms have more productive technologies or are their technologies more scalable, or both? We use administrative data on Canadian and US firms to estimate flexible nonparametric production functions. Our estimation results in a joint distribution of output elasticities of capital, labor, and intermediate inputs\u2014therefore, returns to scale (RTS)\u2014along with total factor productivity (TFP). We find significant heterogeneity in both RTS and TFP across firms. Larger firms operate technologies with higher RTS, both across and within industries. Higher RTS for large firms are entirely driven by higher intermediate input elasticities. Descriptively, these align with higher intermediate input revenue shares. We then incorporate RTS heterogeneity into an otherwise standard incomplete markets model with endogenous entrepreneurship that matches the observed heterogeneity in TFP and RTS. In this model, we find that the efficiency losses of financial frictions are more than twice as large relative to the conventional calibration that loads all heterogeneity on TFP and imposes a common RTS parameter."
+    },
+    {
+      "title": "Investment in Demand and Dynamic Competition for Customers",
+      "authors": "with Lukas Nord",
+      "year": 2026,
+      "pdf": "assets/papers/hubmer_nord_2026.pdf",
+      "abstract": ""
+    }
+  ],
+  "publications": [
+    {
+      "title": "Not a Typical Firm: Capital\u2013Labor Substitution and Firms\u2019 Labor Shares",
+      "authors": "with Pascual Restrepo",
+      "status": "Forthcoming at AEJ: Macroeconomics",
+      "pdf": "assets/papers/hubmer_restrepo_aejmacro.pdf",
+      "code": "",
+      "abstract": ""
+    },
+    {
+      "title": "The Race Between Preferences and Technology",
+      "year": 2023,
+      "journal": "Econometrica",
+      "volume": "91: 227\u2013261",
+      "doi": "https://doi.org/10.3982/ECTA18580",
+      "pdf": "assets/papers/hubmer_2023_econometrica.pdf",
+      "code": "",
+      "abstract": ""
+    },
+    {
+      "title": "Tax Wedges, Financial Frictions and Misallocation",
+      "authors": "with \u00c1rp\u00e1d \u00c1brah\u00e1m, Piero Gottardi, and Lukas Mayr",
+      "year": 2023,
+      "journal": "Journal of Public Economics",
+      "volume": "227",
+      "doi": "https://doi.org/10.1016/j.jpubeco.2023.105000",
+      "pdf": "assets/papers/hubmer_etal_jpube_2023.pdf",
+      "code": "",
+      "abstract": ""
+    },
+    {
+      "title": "Sources of U.S. Wealth Inequality: Past, Present, and Future",
+      "authors": "with Per Krusell and Anthony A. Smith, Jr.",
+      "year": 2021,
+      "journal": "NBER Macroeconomics Annual",
+      "volume": "35: 391\u2013455",
+      "doi": "https://doi.org/10.1086/712332",
+      "pdf": "assets/papers/hubmer_krusell_smith_2021.pdf",
+      "appendix": "assets/papers/hubmer_krusell_smith_2021_appendix.pdf",
+      "code": "",
+      "note": "A previous version circulated as NBER working paper under the title \u201cThe Historical Evolution of the Wealth Distribution: A Quantitative-Theoretic Investigation\u201d.",
+      "abstract": ""
+    },
+    {
+      "title": "The Job Ladder and Its Implications for Earnings Risk",
+      "year": 2018,
+      "journal": "Review of Economic Dynamics",
+      "volume": "29: 172\u2013194",
+      "doi": "https://doi.org/10.1016/j.red.2018.01.003",
+      "pdf": "assets/papers/hubmer_2018_red.pdf",
+      "code": "",
+      "abstract": ""
+    },
+    {
+      "title": "On the Strategic Equivalence of Linear Dynamic and Repeated Games",
+      "year": 2015,
+      "journal": "International Game Theory Review",
+      "volume": "17:3, 1\u201311",
+      "pdf": "assets/papers/hubmer_2015_igtr.pdf",
+      "abstract": ""
+    },
+    {
+      "title": "A Note on Consequentialism in a Dynamic Savage Framework: A Comment on Ghirardato (2002)",
+      "authors": "with Franz Ostrizek",
+      "year": 2015,
+      "journal": "Economic Theory Bulletin",
+      "volume": "3: 265\u2013269",
+      "pdf": "assets/papers/hubmer_ostrizek_2015.pdf",
+      "abstract": ""
+    }
+  ],
+  "discussions": [
+    {
+      "title": "The Macroeconomics of Data: Scale, Product Choice, and Pricing in the Information Age",
+      "discussedAuthors": "by Vladimir Asriyan and Alexandre Kohlhas",
+      "venue": "Frontier Topics in Macro-Finance, Chicago, May 2025",
+      "slides": "assets/papers/discussion_asriyan_kohlhas_2025.pdf"
+    },
+    {
+      "title": "From Labor to Intermediates: Firm Growth, Input Substitution, and Monopsony",
+      "discussedAuthors": "by Matthias Mertens and Benjamin Schoefer",
+      "venue": "NBER Wage Dynamics in the 21st Century, September 2024",
+      "slides": "assets/papers/discussion_mertens_schoefer_2024.pdf"
+    }
+  ]
+}
