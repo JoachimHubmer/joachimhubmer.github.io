@@ -50,6 +50,7 @@ function escapeHtml(text) {
 function buildLinks(p) {
   var html = '';
   if (p.pdf) html += '<a href="' + p.pdf + '">paper</a>';
+  else if (p.doi) html += '<a href="' + p.doi + '">paper</a>';
   if (p.supplement) html += '<a href="' + p.supplement + '">supplemental material</a>';
   if (p.appendix) html += '<a href="' + p.appendix + '">online appendix</a>';
   if (p.code) html += '<a href="' + p.code + '">code</a>';
