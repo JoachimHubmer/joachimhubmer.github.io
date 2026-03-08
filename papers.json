@@ -7,6 +7,11 @@
       "status": "Conditionally Accepted at Econometrica",
       "pdf": "assets/papers/HHSO_PAPER.pdf",
       "supplement": "assets/papers/HHSO_OSM.pdf",
+      "bibtex": {
+        "type": "unpublished",
+        "key": "hubmer2025wealthy",
+        "author": "Hubmer, Joachim and Halvorsen, Elin and Salgado, Sergio and Ozkan, Serdar"
+      },
       "abstract": "We study the lifecycle dynamics of wealth inequality using 1993-2019 Norwegian administrative panel data on wealth and income. Employing a novel budget-constraint approach, we decompose the excess wealth of the top 0.1% households relative to the median between ages 45 and 64 into higher saving rates (36%), inheritances (31%), returns (28%), and labor income (5%). One-quarter of the wealthiest\u2014the \u201cNew Money\u201d\u2014start with negative wealth on average but accumulate rapidly through high labor income and exceptionally high saving rates and returns. The \u201cOld Money\u201d inherit substantial wealth and grow it through above-average though more modest saving and returns. We use these dynamic facts to evaluate five standard wealth inequality models. Although these models match cross-sectional wealth concentration, they fail to reproduce the distinct dynamics of New and Old Money. A heterogeneous entrepreneurship model with decreasing returns to scale technology and nonhomothetic preferences is consistent with the observed dynamics."
     },
     {
@@ -14,6 +19,11 @@
       "authors": "with Mons Chan, Guangbin Hong, Serdar Ozkan, and Sergio Salgado",
       "year": 2025,
       "pdf": "assets/papers/CHHOS_SVPT.pdf",
+      "bibtex": {
+        "type": "unpublished",
+        "key": "hubmer2025scalable",
+        "author": "Hubmer, Joachim and Chan, Mons and Ozkan, Serdar and Salgado, Sergio and Hong, Guangbin"
+      },
       "abstract": "Do larger firms have more productive technologies or are their technologies more scalable, or both? We use administrative data on Canadian and US firms to estimate flexible nonparametric production functions. Our estimation results in a joint distribution of output elasticities of capital, labor, and intermediate inputs\u2014therefore, returns to scale (RTS)\u2014along with total factor productivity (TFP). We find significant heterogeneity in both RTS and TFP across firms. Larger firms operate technologies with higher RTS, both across and within industries. Higher RTS for large firms are entirely driven by higher intermediate input elasticities. Descriptively, these align with higher intermediate input revenue shares. We then incorporate RTS heterogeneity into an otherwise standard incomplete markets model with endogenous entrepreneurship that matches the observed heterogeneity in TFP and RTS. In this model, we find that the efficiency losses of financial frictions are more than twice as large relative to the conventional calibration that loads all heterogeneity on TFP and imposes a common RTS parameter."
     },
     {
@@ -21,6 +31,11 @@
       "authors": "with Lukas Nord",
       "year": 2026,
       "pdf": "assets/papers/Hubmer_Nord_IDCC.pdf",
+      "bibtex": {
+        "type": "unpublished",
+        "key": "hubmer2026investment",
+        "author": "Hubmer, Joachim and Nord, Lukas"
+      },
       "abstract": "How demand is allocated across firms is a central determinant of aggregate productivity. Firms can affect this allocation through their prices and non-price investment. We develop a framework with search frictions and dynamic customer relationships in which non-price investment in demand shapes allocations directly by matching customers to suppliers, and indirectly by altering price competition. A quantitative version matches key facts on how firms compete for customers. In the decentralized equilibrium, distortions from markups and over-investment in demand due to business-stealing externalities cause misallocation. Equilibrium interactions of demand investment and pricing create complementarities between policies that target over-investment in demand and markup distortions. A rise in demand investment over time can account for rising industry concentration without raising market power and reduces firms\u2019 intangible value through equilibrium effects."
     }
   ],
@@ -31,6 +46,12 @@
       "status": "Forthcoming at AEJ: Macroeconomics",
       "pdf": "assets/papers/HubmerRestrepo_NotTypicalFirm.pdf",
       "code": "http://www.openicpsr.org/openicpsr/project/209706/version/V1/view",
+      "bibtex": {
+        "type": "article",
+        "key": "hubmer2025typical",
+        "author": "Hubmer, Joachim and Restrepo, Pascual",
+        "journal": "American Economic Journal: Macroeconomics"
+      },
       "abstract": "The US labor share has declined, especially in manufacturing and retail. Yet, the labor share of a typical median firm in these sectors has risen. This paper introduces a model where firms incur fixed costs to automate tasks. In response to lower capital prices, the model reproduces the labor share patterns observed in the data: large firms automate more tasks, reducing the aggregate labor share; while the median firm continues to operate a labor-intensive technology with a rising labor share. When calibrating the automation fixed costs to match the observed adoption heterogeneity, the model generates the aggregate and new firm-level facts quantitatively as the result of lower capital prices, especially in manufacturing from 1982\u20132012."
     },
     {
@@ -41,6 +62,13 @@
       "doi": "https://doi.org/10.3982/ECTA18580",
       "pdf": "assets/papers/Hubmer_RPT.pdf",
       "code": "https://drive.google.com/file/d/1-MXdy1ukwDdcn6MCVzJye2O0BCmIqQus/view?usp=sharing",
+      "bibtex": {
+        "type": "article",
+        "key": "hubmer2023race",
+        "author": "Hubmer, Joachim",
+        "volume": "91",
+        "pages": "227--261"
+      },
       "abstract": "This paper argues that a unified analysis of consumption and production is required to understand the long-run behavior of the U.S. labor share. First, using household data on the universe of consumer spending, I document that higher-income households spend relatively more on labor-intensive goods and services as a share of their total consumption. Interpreted as non-homothetic preferences, this fact implies that economic growth increases the labor share through an income effect. Second, using disaggregated data on factor shares and capital intensities, I document that equipment-intensive goods experienced relatively larger declines in their labor shares. Based on this finding, I estimate that capital and labor are gross substitutes, and that investment-specific technical change reduces the labor share. Given the estimated elasticities, a parsimonious neoclassical model quantitatively matches the observed low-frequency movements in the aggregate labor share since the 1950s, both its relative stability until about 1980 and its decline thereafter."
     },
     {
@@ -52,6 +80,12 @@
       "doi": "https://doi.org/10.1016/j.jpubeco.2023.105000",
       "pdf": "assets/papers/Tax_Wedges_AGHM.pdf",
       "code": "https://drive.google.com/file/d/1-KcdPX_8bBkrQKgnrOcyHiINK9yvmDoD/view?usp=sharing",
+      "bibtex": {
+        "type": "article",
+        "key": "abraham2023tax",
+        "author": "\\'{A}brah\\'{a}m, \\'{A}rp\\'{a}d and Gottardi, Piero and Hubmer, Joachim and Mayr, Lukas",
+        "volume": "227"
+      },
       "abstract": "We revisit the classical result that in a closed economy the incidence of corporate taxes on labor is approximately zero. We consider a rich general equilibrium framework, where agents differ in the level of their wealth as well as in their managerial and working ability. Potential entrepreneurs go through all the key decisions affected by corporate tax changes: the choice of (i) occupation, (ii) organizational form, (iii) investment, and (iv) financing structure. We allow both for the presence of financial frictions and the traditional tax advantage of debt over corporate equity, which jointly generate misallocation of capital and talent. In this environment we characterize the effects of increasing corporate taxes both analytically and for a calibrated version of the model. We show that this tax increase reallocates production from C corporations to pass-through businesses. Since, due to distorted prices, the latter have higher capital-labor ratios, this reallocation generates a reduction in labor productivity and wages. Furthermore, the corporate tax increase induces some C corporations to reorganize as pass-throughs, which implies more restricted access to external funds and thus a socially inefficient downsizing of production in these firms. Finally, the tax increase causes further misallocation of talent by inducing agents with low wealth relative to their managerial talent to switch from entrepreneurship to being workers, while the reverse happens for agents with higher wealth and lower managerial skills. Overall, we find that both labor and capital bear a large share of the corporate tax incidence, while entrepreneurs are net beneficiaries of the tax change."
     },
     {
@@ -64,6 +98,14 @@
       "pdf": "assets/papers/HKS_Wealth_Paper.pdf",
       "appendix": "assets/papers/HKS_Wealth_OnlineAppendix.pdf",
       "code": "https://drive.google.com/open?id=1aJ3MxuJkQoA9Gly0H2SLH1Jdy_TErU9c",
+      "bibtex": {
+        "type": "article",
+        "key": "hubmer2021sources",
+        "author": "Hubmer, Joachim and Krusell, Per and Smith, Anthony A.",
+        "volume": "35",
+        "pages": "391--455",
+        "publisher": "University of Chicago Press"
+      },
       "note": "A previous version circulated as NBER working paper under the title \u201cThe Historical Evolution of the Wealth Distribution: A Quantitative-Theoretic Investigation\u201d.",
       "abstract": "This paper employs a benchmark heterogeneous-agent macroeconomic model to examine a number of plausible drivers of the rise in wealth inequality in the U.S. over the last forty years. We find that the significant drop in tax progressivity starting in the late 1970s is the most important driver of the increase in wealth inequality since then. The sharp observed increases in earnings inequality and the falling labor share over the recent decades fall far short of accounting for the data. The model can also account for the dynamics of wealth inequality over the period\u2014in particular the observed U-shape\u2014and here the observed variations in asset returns are key. Returns on assets matter because portfolios of households differ systematically both across and within wealth groups, a feature in our model that also helps us to match, quantitatively, a key long-run feature of wealth and earnings distributions: the former is much more highly concentrated than the latter."
     },
@@ -75,11 +117,25 @@
       "doi": "https://doi.org/10.1016/j.red.2018.01.003",
       "pdf": "assets/papers/Hubmer_JobLadderEarningsRisk_RED2018.pdf",
       "code": "https://ideas.repec.org/c/red/ccodes/16-276.html",
+      "bibtex": {
+        "type": "article",
+        "key": "hubmer2018job",
+        "author": "Hubmer, Joachim",
+        "volume": "29",
+        "pages": "172--194"
+      },
       "abstract": "This paper analyzes the ability of a job ladder framework to explain recent evidence on life-cycle earnings dynamics. Using administrative data, Guvenen, Karahan, Ozkan, and Song (2015) document several new facts about the distribution of earnings growth, most notably large negative skewness and high excess kurtosis, rejecting the frequently used log-normal framework. I show that these new facts can be well explained by a standard structural representation of a frictional labor market \u2013 a life-cycle version of the job ladder model \u2013 in combination with a simple human capital process. Furthermore, I identify endogenous search effort, risk aversion and wealth accumulation, and skill loss in unemployment as key model features that interact with the labor market friction to jointly reconcile the evidence."
     },
     {
       "title": "On the Strategic Equivalence of Linear Dynamic and Repeated Games",
       "year": 2015,
+      "bibtex": {
+        "type": "article",
+        "key": "hubmer2015strategic",
+        "author": "Hubmer, Joachim",
+        "volume": "17",
+        "pages": "1--11"
+      },
       "journal": "International Game Theory Review",
       "volume": "17:3, 1\u201311",
       "doi": "http://dx.doi.org/10.1142/S0219198915500061",
@@ -89,6 +145,13 @@
       "title": "A Note on Consequentialism in a Dynamic Savage Framework: A Comment on Ghirardato (2002)",
       "authors": "with Franz Ostrizek",
       "year": 2015,
+      "bibtex": {
+        "type": "article",
+        "key": "hubmer2015note",
+        "author": "Hubmer, Joachim and Ostrizek, Franz",
+        "volume": "3",
+        "pages": "265--269"
+      },
       "journal": "Economic Theory Bulletin",
       "volume": "3:2, 265\u2013269",
       "doi": "https://doi.org/10.1007/s40505-014-0057-1",
