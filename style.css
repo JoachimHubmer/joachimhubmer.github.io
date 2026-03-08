@@ -208,6 +208,31 @@ a:hover { opacity: 0.75; }
   letter-spacing: -0.01em;
 }
 
+/* Typewriter */
+.typewriter::after {
+  content: '|';
+  animation: blink-cursor 0.7s step-end infinite;
+  color: var(--accent);
+}
+.typewriter-done::after {
+  animation: blink-cursor 0.7s step-end 3;
+  animation-fill-mode: forwards;
+}
+.typewriter-done::after { opacity: 0; animation: blink-cursor 0.7s step-end 3 forwards; }
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Gradient name */
+.home-hero h1 {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--link) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .home-bio {
   font-size: 1.02rem;
   color: var(--text);
@@ -262,7 +287,8 @@ section#teaching {
   color: var(--accent);
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, var(--accent), var(--link), transparent) 1;
   letter-spacing: -0.01em;
 }
 
@@ -288,7 +314,10 @@ section#teaching {
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .paper:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 16px rgba(1, 31, 91, 0.15), 0 0 8px rgba(1, 31, 91, 0.08);
+}
+[data-theme="dark"] .paper:hover {
+  box-shadow: 0 2px 16px rgba(130, 175, 211, 0.15), 0 0 8px rgba(130, 175, 211, 0.08);
 }
 
 .paper-header {

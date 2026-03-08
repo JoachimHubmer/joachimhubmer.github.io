@@ -290,11 +290,19 @@ var econTerms = [
 function initEconRain() {
   var photo = document.querySelector('.home-photo');
   if (!photo) return;
-  photo.style.cursor = 'pointer';
   var raining = false;
+  var clickCount = 0;
+  var clickTimer = null;
 
   photo.addEventListener('click', function () {
     if (raining) return;
+    clickCount++;
+    clearTimeout(clickTimer);
+    if (clickCount < 3) {
+      clickTimer = setTimeout(function () { clickCount = 0; }, 800);
+      return;
+    }
+    clickCount = 0;
     raining = true;
 
     var overlay = document.createElement('div');
@@ -333,6 +341,25 @@ function initEconRain() {
   });
 }
 
+// ===== Typewriter =====
+function initTypewriter() {
+  var el = document.querySelector('.typewriter');
+  if (!el) return;
+  var text = el.getAttribute('data-text');
+  var i = 0;
+  el.textContent = '';
+  function type() {
+    if (i < text.length) {
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 80);
+    } else {
+      el.classList.add('typewriter-done');
+    }
+  }
+  setTimeout(type, 400);
+}
+
 // ===== Init =====
 document.addEventListener('DOMContentLoaded', function () {
   initTheme();
@@ -341,4 +368,5 @@ document.addEventListener('DOMContentLoaded', function () {
   initNavHighlight();
   initParticles();
   initEconRain();
+  initTypewriter();
 });
