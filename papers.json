@@ -7,9 +7,11 @@
       "status": "Conditionally Accepted at Econometrica",
       "pdf": "assets/papers/HHOS_2026.pdf",
       "bibtex": {
-        "type": "unpublished",
-        "key": "hubmer2026wealthy",
-        "author": "Hubmer, Joachim and Halvorsen, Elin and Ozkan, Serdar and Salgado, Sergio"
+        "type": "techreport",
+        "key": "hubmer2023wealthy",
+        "author": "Hubmer, Joachim and Halvorsen, Elin and Salgado, Sergio and Ozkan, Serdar",
+        "note": "Available at SSRN: https://ssrn.com/abstract=4362818",
+        "url": "https://doi.org/10.2139/ssrn.4362818"
       },
       "abstract": "We study the lifecycle dynamics of wealth inequality using 1993-2019 Norwegian administrative panel data on wealth and income. Employing a novel budget-constraint approach, we decompose the excess wealth of the top 0.1% households relative to the median between ages 45 and 64 into higher saving rates (36%), inheritances (31%), returns (28%), and labor income (5%). One-quarter of the wealthiest\u2014the \u201cNew Money\u201d\u2014start with negative wealth on average but accumulate rapidly through high labor income and exceptionally high saving rates and returns. The \u201cOld Money\u201d inherit substantial wealth and grow it through above-average though more modest saving and returns. We use these dynamic facts to evaluate five standard wealth inequality models. Although these models match cross-sectional wealth concentration, they fail to reproduce the distinct dynamics of New and Old Money. A heterogeneous entrepreneurship model with decreasing returns to scale technology and nonhomothetic preferences is consistent with the observed dynamics."
     },

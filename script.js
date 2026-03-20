@@ -195,6 +195,8 @@ function generateBibtex(p) {
   if (b.volume) lines.push('  volume = {' + b.volume + '},');
   if (b.pages) lines.push('  pages = {' + b.pages + '},');
   if (b.publisher) lines.push('  publisher = {' + b.publisher + '},');
+  if (b.url) lines.push('  url = {' + b.url + '},');
+  if (b.note) lines.push('  note = {' + b.note + '},');
   if (p.doi) lines.push('  doi = {' + p.doi.replace(/^https?:\/\/doi\.org\//, '') + '},');
   lines.push('}');
   return lines.join('\n');
