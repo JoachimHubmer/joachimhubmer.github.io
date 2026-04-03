@@ -24,6 +24,13 @@ python3 -m http.server 8000
 
 **BibTeX generation:** Built dynamically in `generateBibtex()` from the `bibtex` object on each paper in `papers.json`. The bibtex key convention is `firstAuthorLastName + year + keyword`.
 
+## CV
+
+The CV LaTeX source is maintained in Dropbox (not in this repo). Only the compiled PDF is committed to `assets/`.
+
+- **Source:** `~/Library/CloudStorage/Dropbox/CV/CV_Joachim_Hubmer.tex`
+- **Compiled PDF:** `assets/CV_Joachim_Hubmer.pdf`
+
 ## Key Conventions
 
 - **Penn brand colors:** blue `#011F5B`, red `#990000`. These are used throughout as `--accent` and `--link`.
