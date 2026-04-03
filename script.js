@@ -193,6 +193,8 @@ function generateBibtex(p) {
   var journal = b.journal || p.journal;
   if (journal) lines.push('  journal = {' + journal + '},');
   if (b.volume) lines.push('  volume = {' + b.volume + '},');
+  if (b.number) lines.push('  number = {' + b.number + '},');
+  if (b.month) lines.push('  month = {' + b.month + '},');
   if (b.pages) lines.push('  pages = {' + b.pages + '},');
   if (b.publisher) lines.push('  publisher = {' + b.publisher + '},');
   if (b.url) lines.push('  url = {' + b.url + '},');

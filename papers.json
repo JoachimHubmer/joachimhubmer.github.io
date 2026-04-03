@@ -44,14 +44,23 @@
     {
       "title": "Not a Typical Firm: Capital\u2013Labor Substitution and Firms\u2019 Labor Shares",
       "authors": "with Pascual Restrepo",
-      "status": "Forthcoming at AEJ: Macroeconomics",
+      "year": 2026,
+      "journal": "American Economic Journal: Macroeconomics",
+      "volume": "18(2): 34\u201371",
+      "doi": "https://doi.org/10.1257/mac.20230325",
       "pdf": "assets/papers/HubmerRestrepo_NotTypicalFirm.pdf",
       "code": "http://www.openicpsr.org/openicpsr/project/209706/version/V1/view",
       "bibtex": {
         "type": "article",
-        "key": "hubmer2025typical",
+        "key": "hubmer2026typical",
         "author": "Hubmer, Joachim and Restrepo, Pascual",
-        "journal": "American Economic Journal: Macroeconomics"
+        "journal": "American Economic Journal: Macroeconomics",
+        "volume": "18",
+        "number": "2",
+        "year": "2026",
+        "month": "April",
+        "pages": "34--71",
+        "doi": "10.1257/mac.20230325"
       },
       "abstract": "The US labor share has declined, especially in manufacturing and retail. Yet, the labor share of a typical median firm in these sectors has risen. This paper introduces a model where firms incur fixed costs to automate tasks. In response to lower capital prices, the model reproduces the labor share patterns observed in the data: large firms automate more tasks, reducing the aggregate labor share; while the median firm continues to operate a labor-intensive technology with a rising labor share. When calibrating the automation fixed costs to match the observed adoption heterogeneity, the model generates the aggregate and new firm-level facts quantitatively as the result of lower capital prices, especially in manufacturing from 1982\u20132012."
     },
