@@ -18,14 +18,14 @@
     {
       "title": "Scalable versus Productive Technologies",
       "authors": "with Mons Chan, Guangbin Hong, Serdar Ozkan, and Sergio Salgado",
-      "year": 2025,
+      "year": 2026,
       "pdf": "assets/papers/CHHOS_SVPT.pdf",
       "bibtex": {
         "type": "unpublished",
-        "key": "hubmer2025scalable",
+        "key": "hubmer2026scalable",
         "author": "Hubmer, Joachim and Chan, Mons and Ozkan, Serdar and Salgado, Sergio and Hong, Guangbin"
       },
-      "abstract": "Do larger firms have more productive technologies or are their technologies more scalable, or both? We use administrative data on Canadian and US firms to estimate flexible nonparametric production functions. Our estimation results in a joint distribution of output elasticities of capital, labor, and intermediate inputs\u2014therefore, returns to scale (RTS)\u2014along with total factor productivity (TFP). We find significant heterogeneity in both RTS and TFP across firms. Larger firms operate technologies with higher RTS, both across and within industries. Higher RTS for large firms are entirely driven by higher intermediate input elasticities. Descriptively, these align with higher intermediate input revenue shares. We then incorporate RTS heterogeneity into an otherwise standard incomplete markets model with endogenous entrepreneurship that matches the observed heterogeneity in TFP and RTS. In this model, we find that the efficiency losses of financial frictions are more than twice as large relative to the conventional calibration that loads all heterogeneity on TFP and imposes a common RTS parameter."
+      "abstract": "Are larger firms more productive, more scalable, or both? We use firm-level panel data from thirteen countries and employ a broad set of methods to estimate factor elasticities\u2014capturing returns to scale (RTS)\u2014and total factor productivity (TFP). We find substantial RTS heterogeneity within industries, with larger firms exhibiting higher RTS driven by greater intermediate input elasticities. TFP, by contrast, rises with firm size only up to the top decile before declining. The RTS\u2013size gradient primarily reflects persistent, ex-ante differences in production technologies across firms rather than non-homothetic variation along a common production function. Incorporating RTS heterogeneity into a standard model of entrepreneurship more than doubles the efficiency losses from financial frictions compared with a conventional calibration with only TFP differences."
     },
     {
       "title": "Investment in Demand and Dynamic Competition for Customers",
