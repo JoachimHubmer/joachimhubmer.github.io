@@ -86,18 +86,30 @@ function buildMeta(p) {
   return meta;
 }
 
-function renderPaper(p, isDiscussion) {
+function buildWorkInProgressMeta(p) {
+  var parts = [];
+  if (p.authors) parts.push(escapeHtml(p.authors));
+  if (p.venue) parts.push(escapeHtml(p.venue));
+  var meta = parts.join('. ');
+  if (meta) meta += '.';
+  return meta;
+}
+
+function renderPaper(p, type) {
   var hasAbstract = p.abstract && p.abstract.trim() !== '';
   var html = '<div class="paper">';
   html += '<div class="paper-header">';
   html += '<div>';
 
-  if (isDiscussion) {
+  if (type === 'discussion') {
     html += '<div class="paper-title">\u201C' + escapeHtml(p.title) + '\u201D</div>';
     var meta = '';
     if (p.discussedAuthors) meta += escapeHtml(p.discussedAuthors) + '. ';
     if (p.venue) meta += '<em>' + escapeHtml(p.venue) + '</em>.';
     html += '<div class="paper-meta">' + meta + '</div>';
+  } else if (type === 'workInProgress') {
+    html += '<div class="paper-title">' + escapeHtml(p.title) + '</div>';
+    html += '<div class="paper-meta">' + buildWorkInProgressMeta(p) + '</div>';
   } else {
     html += '<div class="paper-title">' + escapeHtml(p.title) + '</div>';
     html += '<div class="paper-meta">' + buildMeta(p) + '</div>';
@@ -121,24 +133,26 @@ function renderPaper(p, isDiscussion) {
   return html;
 }
 
-function renderSection(container, papers, isDiscussion) {
+function renderSection(container, papers, type) {
   var html = '';
-  papers.forEach(function (p) { html += renderPaper(p, isDiscussion); });
+  papers.forEach(function (p) { html += renderPaper(p, type); });
   container.innerHTML = html;
 }
 
 function initPapers() {
   var wpEl = document.getElementById('working-papers');
+  var wipEl = document.getElementById('work-in-progress');
   var pubEl = document.getElementById('publications');
   var discEl = document.getElementById('discussions');
-  if (!wpEl && !pubEl && !discEl) return;
+  if (!wpEl && !wipEl && !pubEl && !discEl) return;
 
   fetch('papers.json')
     .then(function (r) { return r.json(); })
     .then(function (data) {
-      if (wpEl && data.working) renderSection(wpEl, data.working, false);
-      if (pubEl && data.publications) renderSection(pubEl, data.publications, false);
-      if (discEl && data.discussions) renderSection(discEl, data.discussions, true);
+      if (wpEl && data.working) renderSection(wpEl, data.working, 'paper');
+      if (wipEl && data.workInProgress) renderSection(wipEl, data.workInProgress, 'workInProgress');
+      if (pubEl && data.publications) renderSection(pubEl, data.publications, 'paper');
+      if (discEl && data.discussions) renderSection(discEl, data.discussions, 'discussion');
       // Attach cite button handlers
       document.querySelectorAll('.cite-btn').forEach(function (btn) {
         btn.addEventListener('click', handleCiteClick);
