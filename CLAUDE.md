@@ -36,7 +36,7 @@ The CV LaTeX source is maintained in Dropbox (not in this repo). Only the compil
 - **Penn brand colors:** blue `#011F5B`, red `#990000`. These are used throughout as `--accent` and `--link`.
 - **Fonts:** Source Sans 3 (body), Source Serif 4 (headings/paper titles). Both loaded from Google Fonts.
 - **Design register:** quiet editorial — flat hairline-divided paper list (no cards/shadows), inline dot-separated paper links, no decorative animation. The econ-rain easter egg (triple-click the headshot) is intentional and stays.
-- **Headshot:** `assets/headshot.jpg` (880×1120 for the 220×280 slot) and `assets/headshot_square.jpg` (og:image). Source/master files live in `~/Library/CloudStorage/Dropbox/promotion/headshots/` (canonical exports named `joachim_hubmer_headshot_2026_*`), not in this repo.
+- **Headshot:** `assets/headshot.jpg` (880×1120 for the 220×280 slot) is the only photo in the repo and also serves as og:image. Source/master files live in `~/Library/CloudStorage/Dropbox/promotion/headshots/` (canonical exports `joachim_hubmer_headshot_2026_*`; alternate treatments in subfolders), not in this repo.
 - **Author ordering:** Most papers use alphabetical ordering. Two papers use randomized order with Hubmer listed first: "Why Are the Wealthiest So Wealthy?" and "Scalable versus Productive Technologies".
 - Paper PDFs and slides go in `assets/papers/`.
 - Discussions use a different render path than regular papers (`isDiscussion` flag) — they show `discussedAuthors` and `venue` instead of standard author/journal metadata.
