@@ -52,14 +52,14 @@ function escapeAttr(text) {
 }
 
 function buildLinks(p) {
-  var html = '';
-  if (p.pdf) html += '<a href="' + p.pdf + '">paper</a>';
-  else if (p.doi) html += '<a href="' + p.doi + '">paper</a>';
-  if (p.supplement) html += '<a href="' + p.supplement + '">supplemental material</a>';
-  if (p.appendix) html += '<a href="' + p.appendix + '">online appendix</a>';
-  if (p.code) html += '<a href="' + p.code + '">code</a>';
-  if (p.slides) html += '<a href="' + p.slides + '">slides</a>';
-  return html;
+  var links = [];
+  if (p.pdf) links.push('<a href="' + p.pdf + '">paper</a>');
+  else if (p.doi) links.push('<a href="' + p.doi + '">paper</a>');
+  if (p.supplement) links.push('<a href="' + p.supplement + '">supplemental material</a>');
+  if (p.appendix) links.push('<a href="' + p.appendix + '">online appendix</a>');
+  if (p.code) links.push('<a href="' + p.code + '">code</a>');
+  if (p.slides) links.push('<a href="' + p.slides + '">slides</a>');
+  return links;
 }
 
 function buildMeta(p) {
@@ -117,8 +117,8 @@ function renderPaper(p, type) {
 
   var links = buildLinks(p);
   var bib = generateBibtex(p);
-  if (bib) links += '<a href="#" class="cite-btn" data-bibtex="' + escapeAttr(bib) + '">bibtex</a>';
-  if (links) html += '<div class="paper-links">' + links + '</div>';
+  if (bib) links.push('<a href="#" class="cite-btn" data-bibtex="' + escapeAttr(bib) + '">bibtex</a>');
+  if (links.length) html += '<div class="paper-links">' + links.join('<span class="plink-sep">&middot;</span>') + '</div>';
   if (p.note) html += '<div class="paper-note">(' + escapeHtml(p.note) + ')</div>';
   html += '</div>'; // close inner div
 
@@ -126,7 +126,7 @@ function renderPaper(p, type) {
   html += '</div>'; // close paper-header
 
   if (hasAbstract) {
-    html += '<div class="paper-abstract">' + escapeHtml(p.abstract) + '</div>';
+    html += '<div class="paper-abstract-wrap"><div class="paper-abstract">' + escapeHtml(p.abstract) + '</div></div>';
   }
 
   html += '</div>'; // close paper
@@ -231,66 +231,6 @@ function handleCiteClick(e) {
   });
 }
 
-// ===== Particles =====
-function initParticles() {
-  var canvas = document.getElementById('particles');
-  if (!canvas) return;
-  var ctx = canvas.getContext('2d');
-  var dots = [];
-  var count = 40;
-  var maxDist = 100;
-
-  function resize() {
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
-  }
-  resize();
-  window.addEventListener('resize', resize);
-
-  for (var i = 0; i < count; i++) {
-    dots.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.4,
-      vy: (Math.random() - 0.5) * 0.4
-    });
-  }
-
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    var dotColor = isDark ? 'rgba(130,175,211,' : 'rgba(1,31,91,';
-
-    for (var i = 0; i < dots.length; i++) {
-      var d = dots[i];
-      d.x += d.vx;
-      d.y += d.vy;
-      if (d.x < 0 || d.x > canvas.width) d.vx *= -1;
-      if (d.y < 0 || d.y > canvas.height) d.vy *= -1;
-
-      ctx.beginPath();
-      ctx.arc(d.x, d.y, 2, 0, Math.PI * 2);
-      ctx.fillStyle = dotColor + '0.3)';
-      ctx.fill();
-
-      for (var j = i + 1; j < dots.length; j++) {
-        var dx = dots[j].x - d.x;
-        var dy = dots[j].y - d.y;
-        var dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < maxDist) {
-          ctx.beginPath();
-          ctx.moveTo(d.x, d.y);
-          ctx.lineTo(dots[j].x, dots[j].y);
-          ctx.strokeStyle = dotColor + (0.15 * (1 - dist / maxDist)) + ')';
-          ctx.stroke();
-        }
-      }
-    }
-    requestAnimationFrame(draw);
-  }
-  draw();
-}
-
 // ===== Easter egg: econ rain =====
 var econTerms = [
   'wealth', 'inequality', 'capital', 'labor', 'TFP', 'markup', 'GDP',
@@ -359,32 +299,11 @@ function initEconRain() {
   });
 }
 
-// ===== Typewriter =====
-function initTypewriter() {
-  var el = document.querySelector('.typewriter');
-  if (!el) return;
-  var text = el.getAttribute('data-text');
-  var i = 0;
-  el.textContent = '';
-  function type() {
-    if (i < text.length) {
-      el.textContent += text.charAt(i);
-      i++;
-      setTimeout(type, 80);
-    } else {
-      el.classList.add('typewriter-done');
-    }
-  }
-  setTimeout(type, 400);
-}
-
 // ===== Init =====
 document.addEventListener('DOMContentLoaded', function () {
   initTheme();
   initMobileNav();
   initPapers();
   initNavHighlight();
-  initParticles();
   initEconRain();
-  initTypewriter();
 });
