@@ -24,12 +24,12 @@ python3 -m http.server 8000
 
 **BibTeX generation:** Built dynamically in `generateBibtex()` from the `bibtex` object on each paper in `papers.json`. The bibtex key convention is `firstAuthorLastName + year + keyword`.
 
-## CV
+## CV and Research Statement
 
-The CV LaTeX source is maintained in Dropbox (not in this repo). Only the compiled PDF is committed to `assets/`.
+The LaTeX sources for both live in Dropbox (not in this repo). Only the compiled PDFs are committed to `assets/`.
 
-- **Source:** `~/Library/CloudStorage/Dropbox/CV/CV_Joachim_Hubmer.tex`
-- **Compiled PDF:** `assets/CV_Joachim_Hubmer.pdf`
+- **CV:** source `~/Library/CloudStorage/Dropbox/CV/CV_Joachim_Hubmer.tex` → `assets/CV_Joachim_Hubmer.pdf`
+- **Research statement:** `assets/research_statement_hubmer.pdf` is a byte-identical copy of the current internal statement, `~/Library/CloudStorage/Dropbox/promotion/research_statement/research_statement_hubmer_vN.pdf` (currently v7, July 2026, the Penn tenure version), with the `_vN` suffix dropped. Deliberately not a separate "public" edit: the website must carry exactly the version used internally. When a new version is compiled, copy it over the asset under the same name.
 
 ## Key Conventions
 
@@ -37,6 +37,6 @@ The CV LaTeX source is maintained in Dropbox (not in this repo). Only the compil
 - **Fonts:** Source Sans 3 (body), Source Serif 4 (headings/paper titles). Both loaded from Google Fonts.
 - **Design register:** quiet editorial — flat hairline-divided paper list (no cards/shadows), inline dot-separated paper links, no decorative animation. The econ-rain easter egg (triple-click the headshot) is intentional and stays.
 - **Headshot:** `assets/headshot.jpg` (880×1120 for the 220×280 slot) is the only photo in the repo and also serves as og:image. Source/master files live in `~/Library/CloudStorage/Dropbox/promotion/headshots/` (canonical exports `joachim_hubmer_headshot_2026_*`; alternate treatments in subfolders), not in this repo.
-- **Author ordering:** Most papers use alphabetical ordering. Two papers use randomized order with Hubmer listed first: "Why Are the Wealthiest So Wealthy?" and "Scalable versus Productive Technologies".
+- **Author ordering:** Most papers use alphabetical ordering. Two papers use certified randomized order (ⓡ) with Hubmer listed first, and the display string in `papers.json` must follow the certified order from the paper's title page, not alphabetical order: "Why Are the Wealthiest So Wealthy?" = Hubmer, Halvorsen, Salgado, Ozkan; "Scalable versus Productive Technologies" = Hubmer, Chan, Ozkan, Salgado, Hong.
 - Paper PDFs and slides go in `assets/papers/`.
 - Discussions use a different render path than regular papers (`isDiscussion` flag) — they show `discussedAuthors` and `venue` instead of standard author/journal metadata.
