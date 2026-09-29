@@ -1,6 +1,19 @@
 {
   "working": [
     {
+      "title": "Investment in Demand and Dynamic Competition for Customers",
+      "authors": "with Lukas Nord",
+      "year": 2026,
+      "status": "Revise and Resubmit at the American Economic Review",
+      "pdf": "assets/papers/Hubmer_Nord_IDCC.pdf",
+      "bibtex": {
+        "type": "unpublished",
+        "key": "hubmer2026investment",
+        "author": "Hubmer, Joachim and Nord, Lukas"
+      },
+      "abstract": "The allocation of demand across firms determines aggregate productivity. Firms affect allocations through prices and non-price investment in demand. We develop a framework with search frictions and dynamic customer relationships in which demand investment shapes allocations directly by matching customers to suppliers and indirectly by driving price competition. A quantitative version matches key facts on how firms compete for customers. In equilibrium, markup distortions and business-stealing externalities induce misallocation and demand over-investment. Equilibrium interactions between demand investment and pricing create policy complementarities. Rising demand investment can raise concentration without raising market power, while reducing firms\u2019 intangible value through equilibrium effects."
+    },
+    {
       "title": "Scalable versus Productive Technologies",
       "authors": "with Mons Chan, Serdar Ozkan, Sergio Salgado, and Guangbin Hong",
       "year": 2026,
@@ -11,18 +24,6 @@
         "author": "Hubmer, Joachim and Chan, Mons and Ozkan, Serdar and Salgado, Sergio and Hong, Guangbin"
       },
       "abstract": "Are larger firms more productive, more scalable, or both? We use firm-level panel data from thirteen countries and employ a broad set of methods to estimate factor elasticities\u2014capturing returns to scale (RTS)\u2014and total factor productivity (TFP). We find substantial RTS heterogeneity within industries, with larger firms exhibiting higher RTS driven by greater intermediate input elasticities. TFP, by contrast, rises with firm size only up to the top decile before declining. The RTS\u2013size gradient primarily reflects persistent, ex-ante differences in production technologies across firms rather than non-homothetic variation along a common production function. Incorporating RTS heterogeneity into a standard model of entrepreneurship more than doubles the efficiency losses from financial frictions compared with a conventional calibration with only TFP differences."
-    },
-    {
-      "title": "Investment in Demand and Dynamic Competition for Customers",
-      "authors": "with Lukas Nord",
-      "year": 2026,
-      "pdf": "assets/papers/Hubmer_Nord_IDCC.pdf",
-      "bibtex": {
-        "type": "unpublished",
-        "key": "hubmer2026investment",
-        "author": "Hubmer, Joachim and Nord, Lukas"
-      },
-      "abstract": "The allocation of demand across firms determines aggregate productivity. Firms affect allocations through prices and non-price investment in demand. We develop a framework with search frictions and dynamic customer relationships in which demand investment shapes allocations directly by matching customers to suppliers and indirectly by driving price competition. A quantitative version matches key facts on how firms compete for customers. In equilibrium, markup distortions and business-stealing externalities induce misallocation and demand over-investment. Equilibrium interactions between demand investment and pricing create policy complementarities. Rising demand investment can raise concentration without raising market power, while reducing firms\u2019 intangible value through equilibrium effects."
     }
   ],
   "workInProgress": [
